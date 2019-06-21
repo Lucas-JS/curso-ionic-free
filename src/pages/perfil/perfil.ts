@@ -1,9 +1,8 @@
-import { TabsPage } from './../tabs/tabs';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the IntroPage page.
+ * Generated class for the PerfilPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-intro',
-  templateUrl: 'intro.html',
+  selector: 'page-perfil',
+  templateUrl: 'perfil.html',
 })
-export class IntroPage {
+export class PerfilPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad IntroPage');
-  }
-
-  goToTabsPage(){
-    this.navCtrl.push(TabsPage);
+    console.log('ionViewDidLoad PerfilPage');
   }
 
 }

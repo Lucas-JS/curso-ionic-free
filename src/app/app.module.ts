@@ -1,3 +1,7 @@
+import { FilmeDetalhesPageModule } from './../pages/filme-detalhes/filme-detalhes.module';
+import { PerfilPageModule } from './../pages/perfil/perfil.module';
+import { SobrePageModule } from './../pages/sobre/sobre.module';
+import { ConfiguracoesPageModule } from './../pages/configuracoes/configuracoes.module';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule} from '@angular/http';
@@ -29,7 +33,11 @@ import { ConfigProvider } from '../providers/config/config';
     IonicModule.forRoot(MyApp),
     FeedPageModule,
     IntroPageModule,
-    HttpModule
+    HttpModule,
+    ConfiguracoesPageModule,
+    SobrePageModule,
+    PerfilPageModule,
+    FilmeDetalhesPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -38,6 +46,7 @@ import { ConfigProvider } from '../providers/config/config';
     ContactPage,
     HomePage,
     TabsPage
+
   ],
   providers: [
     StatusBar,
